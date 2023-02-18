@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Rane</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch&family=Josefin+Sans:wght@400;700&family=Montserrat&family=Silkscreen&family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4080765072.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a class="logo" href="#"><span>SHUBH</span>AM</a>
+                <div class = 'hide' id = 'sidemenu'>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <a href="https://medium.com/@shubhwrites" class = 'nav-button'>Blogs</a>
+                    </ul>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </div>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>HI, I AM</p>
+                <h1>SHUBHAM RANE</h1>
+                <p>A <span>DATA SCIENCE</span> STUDENT</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I am Shubham Rane, and I am pursuing my master's in data science and big data analytics from B K Birla College. I have built various predictive models and analysed large datasets using Python, R, SQL, and data visualisation tools.
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('internship')"> Internship </p>
+                    <p class= "tab-links" onclick="opentab('education')"> Education </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Machine Learning and Deep Learning</li>
+
+                        <li><span>Power BI / Tableau</span><br>Designing Web/App Interfaces</li>
+
+                        <li><span>R</span><br>Designing Web/App Interfaces</li>
+
+                        <li><span>SQL</span><br>Designing Web/App Interfaces</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="internship">
+                    <ul>
+                        <li><span>TCS ION</span><br>The main aim of the virtual internship was to develop a forecasting model predicting the price of future stocks by using machine learning techniques. <br><a href="https://github.com/shubhamrane29/TCS-Internship-2022">Code</a> </li>
+
+                        <li><span>Let's Grow More</span><br>One-month virtual internship involving four projects: stock market analysis, iris machine learning, decision tree prediction, and image-to-pencil sketch <br><a href="https://github.com/shubhamrane29/LGM-Internship">Code</a></li>
+
+                        <li><span>CodeClause</span><br>Two projects—detection of credit card fraud and sales analysis with a dashboard using PowerBi—were part of a one-month virtual internship. <br><a href="https://github.com/shubhamrane29/CCMAY-DATA_SCIENCE">Code</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Masters in Data Science and Big Data Analytics</span><br>B K Birla College, Kalyan <br>2021 - Present <br>CGPA: 9.52 (Till Sem 2)</li>
+                        <li><span>Bachlor's in Physics</span><br>G N Khalsa College, Matunga <br>2018 - 2021 <br>CGPA: 7.26</li>
+                        <li><span>H.S.C Science</span><br>G N Khalsa College, Matunga <br>2016 - 2018 <br>Percentage: 72%</li>
+                        <li><span>S.S.C State Board</span><br>IES Modern English School, Dadar <br>Till 2016 <br>Percentage: 86.60%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Pose Estimation</h3>
+                        <p>Using MediaPipe to analyze video data and other features for post-estimation tasks. This technology can be used in a variety of applications, including virtual try-ons, gaming, and human-computer interaction.</p>
+                        <a href="https://github.com/shubhamrane29/post-estimation"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>House Price Prediction</h3>
+                        <p>Building a model to predict the future price of a house based on past data and variables such as location, size, and features. The goal is to provide accurate estimates for buyers, sellers, and real estate agents to make informed decisions.</p>
+                        <a href="https://github.com/shubhamrane29/house-price-prediction"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>WhatsApp Chat Analysis</h3>
+                        <p>It gives daily, weekly, and monthly analyses of personal chats, groups, or individual people in the group. The web app was developed on Streamlit and deployed on Render.</p>
+                        <a href="https://github.com/shubhamrane29/whatsapp-chat-analysis"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/shubhamrane29?tab=repositories" class="nav-button see-more">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>shubhrane2911@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shubhamrane29/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://medium.com/@shubhwrites"><i class="fa-brands fa-medium"></i></a>
+                        <a href="https://www.instagram.com/booksnhustle/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/shubhamrane29"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" class="nav-button see-more resume-btn"><i class="fa-solid fa-download"></i> Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/shubhrane2911@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New Mail from the Website!">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="nav-button see-more resume-btn">Submit</button>
+                   </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Shubham Rane</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-250px";
+        }
+
+    </script>
+</body>
+</html>
