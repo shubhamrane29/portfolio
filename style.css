@@ -325,6 +325,10 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
+i.fa-solid.fa-download {
+    color: #fff;
+}
+
 .contact-right form{
     width: 100%;
 }
