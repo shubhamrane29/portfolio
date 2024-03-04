@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
+    color: #15152B;
 }
 
 html{
@@ -11,7 +12,6 @@ html{
 
 body{
     background: white;
-    color:#080808;
 }
 
 #header{
@@ -63,7 +63,7 @@ nav ul li a:hover::after{
 }
 
 /* CSS */
-.nav-button {
+.nav-button{
   background: #15152B;
   border-radius: 999px;
   box-shadow: #15152B 0 10px 20px -10px;
@@ -99,7 +99,6 @@ nav ul li a:hover::after{
     font-size: 60px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #15152B;
 }
 
 .header-text span{
@@ -115,7 +114,6 @@ nav ul li a:hover::after{
 #about{
     padding: 80px 0;
     background-color:#fff ;
-    color:#080808;
 }
 
 .row{
@@ -200,11 +198,10 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* My Work */
+/* Projects */
 
 #portfolio{
     padding: 50px 0;
-    color: #080808;
 }
 
 .work-list{
@@ -249,7 +246,6 @@ nav ul li a:hover::after{
     text-align: center;
     font-size: 14px;
     transition: height 0.3s;
-    color: #080808;
 }
 
 .layer h3{
@@ -296,7 +292,6 @@ nav ul li a:hover::after{
 
 .contact-left p{
     margin-top: 30px;
-    color: #15152B;
 }
 
 .contact-left p i{
@@ -317,13 +312,12 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #080808;
+    color: #15152B;
     display: inline-block;
     transition: transform 0.3s;
 }
 
 .social-icons a:hover{
-    color: #15152B;
     transform: translateY(-5px);
 }
 
