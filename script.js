@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const body = document.body;
+
+    for (let i = 0; i < 200; i++) { // Create 100 stars
+        const star = document.createElement('div');
+        star.classList.add('star');
+        setRandomPosition(star, body); // Set random position across the body
+        body.appendChild(star);
+    }
+});
+
+function setRandomPosition(element, container) {
+    const containerRect = container.getBoundingClientRect();
+    const randomTop = Math.random() * containerRect.height;
+    const randomLeft = Math.random() * containerRect.width;
+
+    element.style.top = randomTop + 'px';
+    element.style.left = randomLeft + 'px';
+}
+
+
 // JavaScript for handling tabs
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
